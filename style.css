@@ -1,13 +1,22 @@
+:root {
+  --head_gap: 30px;
+}
+
 body {
     background-color: rgb(19, 246, 42);
     font-family: Arial, sans-serif;
     padding: 20px;
+    margin: 0px;
+}
+header {
+    background-color: #290048;
+    padding: 5px; /* Abstand nach innen */
+    margin: -20px -20px 0px -20px;  /* Abstand nach außen */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
-    color: rgb(8, 8, 167);
-}
-
-p {
-    font-size: 18px;
+.horizontaleAnordnung {
+  display: flex;   /* flexcontainer für horizontale anordnung. Alternativ: inline oder inline-block */
+  gap: var(--head_gap); /* Abstand zwischen den Items wert von variable siehe oben */
+  color: rgb(255, 255, 255);
 }
