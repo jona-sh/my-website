@@ -8,11 +8,25 @@ body {
     padding: 20px;
     margin: 0px;
 }
+
 header {
     background-color: #290048;
     padding: 5px; /* Abstand nach innen */
     margin: -20px -20px 0px -20px;  /* Abstand nach außen */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    padding: 5px 5px 20px 5px;
+    margin: 0px -20px -20px -20px;
+    background-color: #290048;
+    color: white;
+    text-align: center;
+}
+
+footer a {
+    margin: 0 10px;
+    color: white;
 }
 
 .horizontaleAnordnung {
