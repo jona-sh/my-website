@@ -1,0 +1,29 @@
+/*Variablen*/
+:root {                                  /* Scope: global */
+  --variablenname: rgb(215, 230, 12);  /* zwei Bindestriche vorne! */
+  --color-wichtiger-absatz: #c00591;   /* Bentztung mit var(--variablenname) siehe unten */
+  --calculated-variable: calc(100px - 40px);          /* rechnen (geht auch mit Variablen) */
+}
+
+
+/*Stil von Klassen Ändern*/
+.rot { color: red; }
+.blau { color: rgb(47, 18, 209); }
+.fett { font-weight: bold; }
+
+/*Stil von Speziellen umbegungen ändern, die mit id gekennzeichnet wurden*/
+#wichtigerAbsatz {
+  color: var(--color-wichtiger-absatz);   /* wert von variable siehe oben */
+  font-style: italic;
+}
+
+
+
+/*Stil von Pseudoklassen ändern (Pseudoklassen beschreiben den Zustand eines elements, nicht das ganze element selbst)*/
+a:hover {
+  color: rgb(17, 188, 23);
+}
+
+/*Stil mit Pseudoelementen verändern. Das sind elemente die nicht gerendert werden*/
+p::after { content: " \2705"; }
+p::before { content: "\1F449 "; }

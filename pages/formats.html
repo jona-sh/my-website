@@ -7,11 +7,29 @@
     <link rel="stylesheet" href="../css/formats.css">
     <link rel="icon" type="image/svg+xml" href="../assets/icon.svg">
     <script src="../js/layout.js" defer></script>
+    <script src="../js/formats.js" defer></script>
 </head>
 <body>
     <header>Loading... </header>
+    
+    <h1>Überschrift</h1>
+    <h2>Unterüberschrift</h2>
 
-    <p>No content</p>
+    <ul>
+        <li>Liste außerhalb des headers</li>
+        <li>also nicht formatiert</li>
+        <li><button type="button" id="magischerRotButton">Turn Red</button></li>
+    </ul>
+    <!-- stil eines elements überschreiben-->
+    <p>stil eines elements überschreiben. Das Checkbox-Emoji wird durch stiländerung von Pseudoelementen erstellt</p>
+    <!-- style durch klasse definieren -->
+    <p class="rot fett">gehört zwei verschiedenen style-klassen an</p>
+    <p class="rot">Gehört nur zur style-Klasse "rot"</p>
+    <!-- style inline definieren-->
+    <p style="color: rgb(19, 84, 159); font-weight: bold;">style inline definieren ist schlecht</p>
+    <!-- style nach id ändern -->
+    <p id="wichtigerAbsatz">style nach id ändern</p>
+    <p>Link mit anclickfunktion: <a onclick="alert('Link geklickt!')">Klick mich</a> Außerdem wurde der stil beim drüberhovern mittels stiländerung durch Pseudoklassen verändert</p>
 
     <footer>Loading...</footer>
 </body>
