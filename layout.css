@@ -38,5 +38,26 @@ footer a {
 .horizontaleAnordnung {
   display: flex;   /* flexcontainer für horizontale anordnung. Alternativ: inline oder inline-block */
   gap: var(--head_gap); /* Abstand zwischen den Items wert von variable siehe oben */
+  list-style: none;
   color: rgb(255, 255, 255);
+}
+
+.home-button {
+  display: inline-flex;
+  align-items: center;
+}
+
+.home-button svg {
+  width: 24px;
+  height: 24px;
+  fill: none;
+  stroke: white;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.home-button:hover svg {
+  stroke: #fff58a;
+  transform: scale(1.15);
 }
